@@ -1,0 +1,101 @@
+
+
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  body {
+    background-color: #ffffff;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1561112079-2c3226d9c559?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNhbGN1bGF0b3J8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    margin-top: 60px;
+    background-color:burlywood;
+    border: solid black 3px;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    border-radius: 15px;
+    user-select: none;
+  }
+  
+  #Display-area {
+    width: 100%;
+    margin: 3vh 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(40px, auto));
+    word-wrap: break-word;
+    padding-bottom: 20px;
+    border-bottom: 1px rgba(128, 128, 128, 0.116) solid;
+  }
+  
+  #Display-area .currentInput {
+    /* display: flex; */
+    text-align: right;
+    height: 8vh;
+    color: black;
+    font-size: xx-large;
+    line-height: 2;
+    word-wrap: break-word;
+  }
+  
+  #Display-area .answerScreen {
+    text-align: right;
+    color:black;
+    height: 7px;
+    line-height: 3;
+    font-size: larger;
+  }
+  
+  .keypad-btns {
+    display: grid;
+    grid: repeat(5, 70px) / repeat(4, 70px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  
+  .keypad-btns button {
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background-color: #474b6b;
+    border:solid white 1px;
+    color: #fff;
+    font-size: x-large;
+  }
+  
+  .keypad-btns .fun_btn {
+    color: #000;
+    background: darkkhaki;
+    border: solid black 1px;
+    font-weight: bold;
+  }
+  
+  .num_btn:hover {
+    background-color: #282a3a;
+  }
+  
+  .fun_btn:hover {
+    background-color: #ffab00;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #131313;
+      align-items: flex-start;
+    }
+  }
